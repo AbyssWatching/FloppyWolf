@@ -11,8 +11,8 @@ public class LogicScripts : MonoBehaviour
     public TMP_Text scoreText;
 
     [ContextMenu("increase score")]
-    public void addScore(){
-        playerScore += 1;
+    public void addScore(int score){
+        playerScore += score;
         scoreText.text = playerScore.ToString();
 
     }
